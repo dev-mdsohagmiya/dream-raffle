@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <!--Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-slate-50">
+    <!-- home -->
+    <div>
+      <!-- Home Container-->
+      <div>
+        <!--Navber-->
+        <div class="w-full mb-3 top-0 pt-4 bg-slate-50 fixed">
+          <div class="flex justify-between px-4">
+            <div class="">
+              <!--Logo-->
+              <div class="">
+                <a href="#">
+                  <img
+                    class="block object-fill h-10 md:h-8 lg:h-11 w-50"
+                    src="../img/logo.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <!--Nav List-->
+            <div>
+              <div class="hidden md:block">
+                <ul>
+                  <li class="inline-block md:text-lg lg:text-2xl mr-5">
+                    <a
+                      class="font-arima font-bold text-green-700 hover:text-blue-700 transition ease-in-out duration-75"
+                      href="http://127.0.0.1:5500/site/layouts/home.html"
+                      ><i class="bi bi-ticket">&nbsp;</i>TICKETS</a
+                    >
+                  </li>
+                  <li class="inline-block md:text-lg lg:text-2xl mr-5">
+                    <a
+                      class="font-arima font-bold text-green-700 hover:text-blue-700 transition ease-in-out duration-75"
+                      href="http://127.0.0.1:5500/site/layouts/home.html"
+                      ><i class="bi bi-bag"></i> &nbsp;BUY</a
+                    >
+                  </li>
+                  <li class="inline-block md:text-lg lg:text-2xl mr-5">
+                    <a
+                      class="font-arima font-bold text-green-700 hover:text-blue-700 transition ease-in-out duration-75"
+                      href="http://127.0.0.1:5500/site/layouts/winner.html"
+                      ><i class="bi bi-trophy"></i>&nbsp;WINNER</a
+                    >
+                  </li>
+                  <li class="inline-block md:text-lg lg:text-2xl mr-5">
+                    <a
+                      class="font-arima font-bold text-green-700 hover:text-blue-700 transition ease-in-out duration-75"
+                      href="#"
+                      ><i class="bi bi-gear"></i>&nbsp; SETTING</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Icon for nav toggling-->
+              <div class="md:hidden">
+                <span
+                  class="toggle-btn text-4xl cursor-pointer"
+                  id="toggle-btn"
+                >
+                  <i
+                    class="bi bi-justify-left text-zinc-700 transition ease-out duration-100 hover:shadow-inner"
+                  ></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- list for md max devices -->
+          <div
+            class="md-navber transition ease-in-out duration-100 overflow-hidden md:hidden toggle-navber"
+            id="toggle-navber"
+          >
+            <div class="my-4">
+              <hr class="my-3" />
+            </div>
+            <div class="bg-white py-2 border-2 rounded-md">
+              <ul>
+                <li
+                  class="md:inline-block md:text-lg lg:text-2xl mr-5 transition ease-in-out duration-10 block py-2 my-2 rounded-xl"
+                >
+                  <a
+                    class="font-arima ml-4 font-bold text-green-700 transition ease-in-out duration-75"
+                    href="http://127.0.0.1:5500/site/layouts/home.html"
+                    ><i class="bi bi-ticket">&nbsp;</i>TICKETS</a
+                  >
+                </li>
+                <li
+                  class="md:inline-block md:text-lg lg:text-2xl transition ease-in-out duration-10 mr-5 block py-2 my-2 rounded-xl"
+                >
+                  <a
+                    class="font-arima ml-4 font-bold text-green-700 transition ease-in-out duration-75"
+                    href="buy-tickets.html"
+                    ><i class="bi bi-bag"></i> &nbsp;BUY</a
+                  >
+                </li>
+                <li
+                  class="md:inline-block md:text-lg lg:text-2xl mr-5 block transition ease-in-out duration-10 py-2 my-2 rounded-xl"
+                >
+                  <a
+                    class="font-arima ml-4 font-bold text-green-700 transition ease-in-out duration-75"
+                    href="./winner.html"
+                    ><i class="bi bi-trophy"></i>&nbsp;WINNER</a
+                  >
+                </li>
+                <li
+                  class="md:inline-block md:text-lg lg:text-2xl mr-5 block py-2 transition ease-in-out duration-10 my-2 rounded-xl h"
+                >
+                  <a
+                    class="font-arima ml-4 font-bold text-green-700 transition ease-in-out duration-75"
+                    href="#"
+                    ><i class="bi bi-gear"></i>&nbsp; SETTING</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- hr -->
+          <div class="border-b-4 border-slate-200 h-4 shadow-md rounded"></div>
+        </div>
+
+        <!-- winner tickets section -->
+        <div class="mt-20">
+          <div class="container mx-auto px-4">
+            <div>
+              <h3 class="md:text-3xl text-xl font-arima pt-3">Winners</h3>
+            </div>
+
+            <div class="container mx-auto">
+              <div>
+                <div class="mt-9 p-5 md:p-10 border-2 bg-white rounded-lg">
+                  <div class="grid grid-cols-2">
+                    <div class="col-span-2 md:col-span-1">
+                      <div class="">
+                        <img src="../img/winner.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                      <ul class="mt-10">
+                        <li class="font-arima text-2xl">
+                          <span class="font-semibold">1. Username:</span>
+                          shohagkhan Ticket-id:dfdh7df
+                        </li>
+                        <li class="font-arima text-2xl">
+                          <span class="font-semibold">1. Username:</span>
+                          shohagkhan Ticket-id:dfdh7df
+                        </li>
+                        <li class="font-arima text-2xl">
+                          <span class="font-semibold">1. Username:</span>
+                          shohagkhan Ticket-id:dfdh7df
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-10">
+                  <button
+                    class="w-full px-4 py-2 font-bold text-white bg-green-600 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    <span>Play Game</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- // -->
+          <footer>
+            <div>
+              <!-- hr -->
+              <div
+                class="border-b-2 border-slate-200 h-4 shadow-md rounded"
+              ></div>
+              <!-- main footer -->
+              <div class="container mx-auto px-4 mt-10">
+                <div class="flex align-middle justify-center">
+                  <div class="bg-white rounded-full border-2">
+                    <img
+                      src="../img/dev.jpg"
+                      class="object-none md:h-50 md:w-50 rounded-full p-1"
+                      alt="dev photo"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <h1>
+                        <span class="text-xl font-cantate"
+                          >&COPY;Copyright 2022.</span
+                        >
+                        <span class="text-xl font-edu"
+                          >Design and Developed by</span
+                        >
+                        <u>
+                          <a
+                            class="font-xl font-edu"
+                            href="https://github.com/msbhh-ms font-edu"
+                            >Shohag Islam Sajjad</a
+                          ></u
+                        >
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <br />
+    <script src="../js/home.js"></script>
+  </body>
+</html>
